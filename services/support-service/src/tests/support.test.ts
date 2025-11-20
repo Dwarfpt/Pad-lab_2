@@ -1,4 +1,15 @@
 import request from 'supertest';
+
+// Мокаем контроллер контактов, чтобы избежать проблем с зависимостями
+jest.mock('../controllers/contactController', () => ({
+    createSupportMessage: (req: any, res: any, next: any) => res.status(201).json({ message: 'Mocked' }),
+    getUserSupportChats: (req: any, res: any, next: any) => res.json({ chats: [] }),
+    getSupportChatById: (req: any, res: any, next: any) => res.json({ chat: {} }),
+    addMessageToChat: (req: any, res: any, next: any) => res.json({ message: 'Mocked' }),
+    getAllSupportChats: (req: any, res: any, next: any) => res.json({ chats: [] }),
+    updateChatStatus: (req: any, res: any, next: any) => res.json({ message: 'Mocked' }),
+}));
+
 import { app } from '../server';
 
 // Мокаем middleware

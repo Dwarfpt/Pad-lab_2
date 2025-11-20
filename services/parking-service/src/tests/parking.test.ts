@@ -15,6 +15,9 @@ jest.mock('../middleware/auth', () => ({
     },
     admin: (req: any, res: any, next: any) => {
         next();
+    },
+    authorize: (...roles: string[]) => (req: any, res: any, next: any) => {
+        next();
     }
 }));
 

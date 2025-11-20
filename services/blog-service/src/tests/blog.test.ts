@@ -6,13 +6,16 @@ import * as authMiddleware from '../middleware/auth';
 // Мокаем модель
 jest.mock('../models/BlogPost');
 
-// Мокаем middleware аутентификации, чтобы пропускать проверку токена
+// Мокаем middleware аутентификации
 jest.mock('../middleware/auth', () => ({
     protect: (req: any, res: any, next: any) => {
         req.user = { _id: 'mock_user_id', role: 'admin' };
         next();
     },
     admin: (req: any, res: any, next: any) => {
+        next();
+    },
+    authorize: (...roles: string[]) => (req: any, res: any, next: any) => {
         next();
     }
 }));
