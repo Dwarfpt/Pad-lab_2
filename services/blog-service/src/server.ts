@@ -51,7 +51,7 @@ app.use(rateLimiter);
 app.set('io', io);
 
 // Database connection
-connectDB();
+if (process.env.NODE_ENV !== 'test') { connectDB(); }
 
 // Socket.io connection с обработкой ошибок
 io.on('connection', (socket) => {
