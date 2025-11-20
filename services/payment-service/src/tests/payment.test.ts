@@ -12,6 +12,9 @@ jest.mock('../middleware/auth', () => ({
     protect: (req: any, res: any, next: any) => {
         req.user = { id: 'user_id', role: 'user' };
         next();
+    },
+    authorize: (...roles: string[]) => (req: any, res: any, next: any) => {
+        next();
     }
 }));
 

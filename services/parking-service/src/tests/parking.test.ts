@@ -18,6 +18,9 @@ jest.mock('../middleware/auth', () => ({
     },
     authorize: (...roles: string[]) => (req: any, res: any, next: any) => {
         next();
+    },
+    deviceAuth: (req: any, res: any, next: any) => {
+        next();
     }
 }));
 

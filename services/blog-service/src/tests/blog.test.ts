@@ -43,7 +43,7 @@ describe('Blog Controller', () => {
             (BlogPost.find as jest.Mock).mockReturnValue(mockFind);
             (BlogPost.countDocuments as jest.Mock).mockResolvedValue(2);
 
-            const res = await request(app).get('/api/blog/posts');
+            const res = await request(app).get('/api/blog');
 
             expect(res.status).toBe(200);
             expect(res.body.success).toBe(true);
@@ -71,7 +71,7 @@ describe('Blog Controller', () => {
             });
 
             const res = await request(app)
-                .post('/api/blog/posts')
+                .post('/api/blog')
                 .send(postData);
 
             expect(res.status).toBe(201);

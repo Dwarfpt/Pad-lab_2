@@ -1,13 +1,10 @@
 import request from 'supertest';
 
-// Мокаем контроллер контактов, чтобы избежать проблем с зависимостями
-jest.mock('../controllers/contactController', () => ({
-    createSupportMessage: (req: any, res: any, next: any) => res.status(201).json({ message: 'Mocked' }),
-    getUserSupportChats: (req: any, res: any, next: any) => res.json({ chats: [] }),
-    getSupportChatById: (req: any, res: any, next: any) => res.json({ chat: {} }),
-    addMessageToChat: (req: any, res: any, next: any) => res.json({ message: 'Mocked' }),
-    getAllSupportChats: (req: any, res: any, next: any) => res.json({ chats: [] }),
-    updateChatStatus: (req: any, res: any, next: any) => res.json({ message: 'Mocked' }),
+// Мокаем nodemailer, чтобы избежать проблем с инициализацией в contactController
+jest.mock('nodemailer', () => ({
+    createTransport: jest.fn().mockReturnValue({
+        sendMail: jest.fn().mockResolvedValue({ messageId: 'test' })
+    })
 }));
 
 import { app } from '../server';
@@ -25,6 +22,12 @@ jest.mock('../middleware/auth', () => ({
         next();
     },
     admin: (req: any, res: any, next: any) => {
+        next();
+    },
+    authorize: (...roles: string[]) => (req: any, res: any, next: any) => {
+        next();
+    },
+    optionalAuth: (req: any, res: any, next: any) => {
         next();
     }
 }));
