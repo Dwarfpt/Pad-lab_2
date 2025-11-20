@@ -1,0 +1,420 @@
+{
+  "parking": {
+    "title": "Găsiți Parcare",
+    "subtitle": "Descoperiți locurile de parcare disponibile în timp real",
+    "loading": "Se încarcă locațiile de parcare...",
+    "searchPlaceholder": "Căutați după locație sau nume...",
+    "filters": "Filtre",
+    "available": "Disponibil",
+    "occupied": "Ocupat",
+    "reserved": "Rezervat",
+    "availableSpots": "Disponibile",
+    "occupiedSpots": "Ocupate", 
+    "reservedSpots": "Rezervate",
+    "viewMap": "Vezi harta parcării",
+    "clickToBook": "Faceți clic pentru a rezerva",
+    "parkingNames": {
+      "centralParkingA": "Parcarea Centrală A",
+      "shoppingCenterParkingB": "Centrul Comercial Parking B"
+    },
+    "spot": "Loc",
+    "spotNumber": "Locul {{number}}",
+    "selectSpot": "Vă rugăm să selectați un loc de parcare",
+    "selectDuration": "Selectați durata",
+    "hourly": "Pe oră",
+    "daily": "Zilnic",
+    "monthly": "Lunar",
+    "perHour": "/oră",
+    "perDay": "/zi",
+    "perMonth": "/lună",
+    "bookNow": "Rezervați acum",
+    "freeBooking": "Rezervare gratuită",
+    "totalPrice": "Preț total",
+    "selectVehicle": "Selectați vehiculul",
+    "selectTariff": "Selectați tariful",
+    "bookingSuccess": "Rezervare reușită"
+  },
+  "tariff": {
+    "title": "Tarife",
+    "description": "Alegeți planul perfect pentru nevoile dumneavoastră",
+    "selectPlan": "Selectați planul",
+    "perHour": "/oră",
+    "perDay": "/zi",
+    "perWeek": "/săptămână",
+    "perMonth": "/lună",
+    "perHourly": "/oră",
+    "perDaily": "/zi", 
+    "perWeekly": "/săptămână",
+    "perMonthly": "/lună",
+    "popular": "Popular",
+    "features": "Caracteristici",
+    "basic": "Pe oră",
+    "standard": "Zilnic", 
+    "premium": "Săptămânal",
+    "vip": "Lunar",
+    "plans": {
+      "hourly": {
+        "name": "Pe oră",
+        "description": "Perfect pentru opriri scurte",
+        "features": [
+          "Plată la utilizare",
+          "Fără angajament", 
+          "Acces 24/7"
+        ]
+      },
+      "daily": {
+        "name": "Zilnic",
+        "description": "Cea mai bună alegere pentru călătorii de o zi",
+        "features": [
+          "Intrare/ieșire nelimitată",
+          "Acces 24/7",
+          "Locuri prioritare"
+        ]
+      },
+      "weekly": {
+        "name": "Săptămânal", 
+        "description": "Excelent pentru naveta săptămânală",
+        "features": [
+          "Reducere 28%",
+          "Loc rezervat",
+          "Acces nelimitat"
+        ]
+      },
+      "monthly": {
+        "name": "Lunar",
+        "description": "Cea mai bună valoare pentru utilizatorii regulați", 
+        "features": [
+          "Reducere 50%",
+          "Loc garantat",
+          "Suport VIP",
+          "Spălare gratuită"
+        ]
+      }
+    }
+  },
+  "cart": {
+    "title": "Coș de cumpărături",
+    "empty": "Coșul este gol",
+    "emptyDescription": "Adăugați tarife sau rezervări în coș",
+    "addedToCart": "{{name}} adăugat în coș",
+    "removeFromCart": "Eliminați din coș",
+    "goToCheckout": "Continuați la finalizare",
+    "itemsCount": "{{count}} articol",
+    "itemsCount_plural": "{{count}} articole"
+  },
+  "checkout": {
+    "title": "Finalizare comandă",
+    "emptyCart": "Coșul este gol",
+    "emptyCartDescription": "Adăugați tarife pentru a continua",
+    "goToTariffs": "Mergeți la tarife",
+    "orderSummary": "Detalii comandă",
+    "summary": "Sumar",
+    "quantity": "Cantitate",
+    "paymentMethod": "Metodă de plată",
+    "card": "Card bancar",
+    "balance": "Sold",
+    "subtotal": "Subtotal",
+    "tax": "TVA",
+    "total": "Total",
+    "placeOrder": "Plasați comanda",
+    "orderPlaced": "Comandă plasată prin {{method}}!",
+    "terms": "Apăsând \"Plasați comanda\", sunteți de acord cu termenii de utilizare",
+    "contactInfo": "Informații de contact",
+    "fullName": "Nume complet",
+    "email": "Email",
+    "phone": "Telefon"
+  },
+  "profile": {
+    "title": "Profil",
+    "myBookings": "Rezervările mele",
+    "activeBookings": "Rezervări active",
+    "bookingsHistory": "Istoricul rezervărilor",
+    "totalSpent": "Total cheltuit",
+    "noBookings": "Nu aveți încă rezervări",
+    "noBookingsDescription": "Rezervați un loc de parcare chiar acum!",
+    "bookParking": "Rezervați parcare",
+    "status": {
+      "active": "Activ",
+      "completed": "Finalizat",
+      "cancelled": "Anulat",
+      "pending": "În așteptare"
+    },
+    "bookingDetails": "Detalii rezervare",
+    "parking": "Parcare",
+    "spot": "Loc",
+    "duration": "Durată",
+    "price": "Preț",
+    "startTime": "Ora de început",
+    "endTime": "Ora de sfârșit",
+    "qrCode": "Cod QR",
+    "showQR": "Afișați codul QR",
+    "hideQR": "Ascundeți codul QR",
+    "cancelBooking": "Anulați rezervarea",
+    "confirmCancel": "Sigur doriți să anulați această rezervare?"
+  },
+  "balance": {
+    "title": "Sold",
+    "currentBalance": "Sold curent",
+    "topUp": "Reîncărcați",
+    "amount": "Sumă",
+    "enterAmount": "Introduceți suma",
+    "minAmount": "Suma minimă de reîncărcare: 10 MDL",
+    "commission": "Comision",
+    "total": "Total de plată",
+    "pay": "Plătiți",
+    "processing": "Procesare...",
+    "success": "Sold reîncărcat cu {{amount}} cu succes!",
+    "error": "Eroare la reîncărcarea soldului",
+    "history": "Istoricul tranzacțiilor",
+    "noTransactions": "Nu există tranzacții",
+    "type": {
+      "topup": "Reîncărcare",
+      "booking": "Rezervare",
+      "refund": "Rambursare"
+    }
+  },
+  "header": {
+    "home": "Acasă",
+    "parking": "Parcare",
+    "tariffs": "Tarife",
+    "about": "Despre",
+    "contact": "Contact",
+    "blog": "Blog",
+    "login": "Autentificare",
+    "register": "Înregistrare",
+    "profile": "Profil",
+    "adminPanel": "Panou Admin",
+    "logout": "Deconectare",
+    "cart": "Coș",
+    "balance": "Sold"
+  },
+  "footer": {
+    "description": "Sistem inteligent de parcare pentru confort și siguranță",
+    "quickLinks": "Link-uri rapide",
+    "contact": "Contact",
+    "followUs": "Urmăriți-ne",
+    "allRightsReserved": "Toate drepturile rezervate"
+  },
+  "auth": {
+    "login": "Autentificare",
+    "register": "Înregistrare",
+    "email": "Email",
+    "password": "Parolă",
+    "confirmPassword": "Confirmați parola",
+    "fullName": "Nume complet",
+    "phone": "Telefon",
+    "forgotPassword": "Ați uitat parola?",
+    "noAccount": "Nu aveți cont?",
+    "hasAccount": "Aveți deja cont?",
+    "signIn": "Conectați-vă",
+    "signUp": "Înregistrați-vă",
+    "loginSuccess": "Autentificare reușită!",
+    "registerSuccess": "Înregistrare reușită!",
+    "loginError": "Email sau parolă invalide",
+    "registerError": "Eroare la înregistrare"
+  },
+  "contact": {
+    "title": "Contactați-ne",
+    "description": "Aveți întrebări? Suntem aici să vă ajutăm!",
+    "name": "Nume",
+    "email": "Email",
+    "subject": "Subiect",
+    "message": "Mesaj",
+    "send": "Trimiteți",
+    "sending": "Se trimite...",
+    "success": "Mesaj trimis cu succes!",
+    "error": "Eroare la trimiterea mesajului",
+    "address": "Adresă",
+    "phone": "Telefon",
+    "workingHours": "Program de lucru"
+  },
+  "support": {
+    "chat": "Chat suport",
+    "online": "Online",
+    "offline": "Offline",
+    "typeMessage": "Scrieți un mesaj...",
+    "send": "Trimiteți",
+    "close": "Închideți",
+    "minimize": "Minimizați"
+  },
+  "currency": {
+    "select": "Selectați moneda",
+    "MDL": "Leu moldovenesc",
+    "USD": "Dolar american",
+    "EUR": "Euro"
+  },
+  "home": {
+    "hero": {
+      "title": "Parcarea inteligentă făcută simplu",
+      "subtitle": "Găsiți, rezervați și plătiți parcarea în secunde. Disponibilitate în timp real, multiple locații, experiență fără probleme.",
+      "findParking": "Găsiți parcare acum",
+      "createAccount": "Creați cont gratuit"
+    },
+    "stats": {
+      "activeUsers": "Utilizatori activi",
+      "parkingLocations": "Locații de parcare", 
+      "uptime": "Timp de funcționare",
+      "support": "Suport"
+    },
+    "features": {
+      "title": "De ce să alegeți Smart Parking?",
+      "subtitle": "Experimentați viitorul parcării cu caracteristicile noastre inovatoare concepute pentru a vă face viața mai ușoară.",
+      "realTimeAvailability": {
+        "title": "Disponibilitate în timp real",
+        "description": "Vedeți locurile de parcare disponibile în timp real cu actualizări live"
+      },
+      "mobileFriendly": {
+        "title": "Prietenos cu mobila", 
+        "description": "Rezervați și gestionați parcarea de pe smartphone"
+      },
+      "securePayment": {
+        "title": "Plată securizată",
+        "description": "Opțiuni de plată online sigure și securizate"
+      },
+      "multipleLocations": {
+        "title": "Multiple locații",
+        "description": "Găsiți parcare în multiple locații din orașul dumneavoastră"
+      },
+      "dynamicPricing": {
+        "title": "Prețuri dinamice",
+        "description": "Prețuri corecte bazate pe cerere și timp"
+      },
+      "easyAccess": {
+        "title": "Acces ușor",
+        "description": "Intrare și ieșire rapidă cu bariere automatizate"
+      }
+    },
+    "howItWorks": {
+      "title": "Cum funcționează",
+      "subtitle": "Începeți în doar trei pași simpli",
+      "step1": {
+        "title": "Găsiți un loc",
+        "description": "Căutați locuri de parcare disponibile lângă destinația dumneavoastră"
+      },
+      "step2": {
+        "title": "Rezervați și plătiți",
+        "description": "Rezervați locul și plătiți securizat online"
+      },
+      "step3": {
+        "title": "Parcați cu ușurință",
+        "description": "Folosiți confirmarea rezervării pentru a accesa zona de parcare"
+      }
+    },
+    "cta": {
+      "title": "Gata să începeți să parcați mai inteligent?",
+      "subtitle": "Alăturați-vă miilor de clienți mulțumiți care au încredere în Smart Parking pentru nevoile lor zilnice de parcare.",
+      "getStarted": "Începeți astăzi"
+    }
+  },
+  "about": {
+    "title": "Despre noi",
+    "subtitle": "Oferim soluții moderne de gestionare a parcărilor folosind tehnologii IoT",
+    "mission": {
+      "title": "Misiunea noastră",
+      "description1": "Ne străduim să facem procesul de parcare simplu, convenabil și eficient pentru toți participanții la trafic.",
+      "description2": "Folosind tehnologii IoT moderne și senzori inteligenți, ajutăm la optimizarea utilizării locurilor de parcare și economisirea timpului șoferilor."
+    },
+    "stats": {
+      "customers": "Clienți mulțumiți",
+      "parkings": "Parcări în sistem",
+      "experience": "Ani experiență",
+      "satisfaction": "Rata satisfacției"
+    },
+    "values": {
+      "title": "Valorile noastre",
+      "innovation": {
+        "title": "Inovație",
+        "description": "Implementăm constant tehnologii de vârf pentru îmbunătățirea experienței utilizatorilor"
+      },
+      "reliability": {
+        "title": "Fiabilitate", 
+        "description": "Sistemele noastre funcționează 24/7 oferind servicii stabile și sigure"
+      },
+      "accessibility": {
+        "title": "Accesibilitate",
+        "description": "Facem parcarea accesibilă tuturor, indiferent de competențele tehnice"
+      }
+    },
+    "team": {
+      "title": "Echipa noastră",
+      "description": "O echipă profesională de dezvoltatori și ingineri care lucrează pentru îmbunătățirea mobilității urbane"
+    },
+    "contact": {
+      "title": "Contactați-ne",
+      "description": "Aveți întrebări? Suntem aici să ajutăm!",
+      "getInTouch": "Luați legătura"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Ultimele știri și idei despre parcarea inteligentă", 
+    "readMore": "Citește mai mult",
+    "author": "Autor",
+    "publishedOn": "Publicat pe",
+    "category": "Categorie",
+    "noArticles": "Nu au fost găsite articole",
+    "loadMore": "Încarcă mai multe articole",
+    "searchPlaceholder": "Căutare articole...",
+    "categories": {
+      "all": "Toate categoriile",
+      "technology": "Tehnologie",
+      "tips": "Sfaturi și trucuri",
+      "environment": "Mediu",
+      "business": "Business",
+      "news": "Știri"
+    },
+    "posts": {
+      "smartParking": {
+        "title": "Viitorul parcării inteligente: Integrarea AI și IoT",
+        "excerpt": "Descoperă cum inteligența artificială și Internetul Obiectelor revoluționează soluțiile de parcare urbană."
+      },
+      "parkingTips": {
+        "title": "5 sfaturi pentru găsirea parcării în orașele aglomerate",
+        "excerpt": "Explorează strategiile experților pentru economisirea timpului și reducerea stresului la căutarea locurilor de parcare în metropole."
+      },
+      "sustainability": {
+        "title": "Durabilitatea în managementul parcării urbane",
+        "excerpt": "Cum contribuie sistemele de parcare inteligentă la reducerea emisiilor de carbon și la crearea de orașe mai verzi."
+      },
+      "dynamicPricing": {
+        "title": "Înțelegerea prețurilor dinamice pentru parcare",
+        "excerpt": "Un ghid detaliat despre cum funcționează prețurile dinamice și beneficiile acestora pentru utilizatori și operatorii de parcări."
+      },
+      "security": {
+        "title": "Funcții de securitate în sistemele moderne de parcare",
+        "excerpt": "Explorează măsurile avansate de securitate care protejează atât vehiculele, cât și datele utilizatorilor în soluțiile de parcare inteligentă."
+      }
+    }
+  },
+  "common": {
+    "save": "Salvați",
+    "cancel": "Anulați",
+    "delete": "Ștergeți",
+    "edit": "Editați",
+    "close": "Închideți",
+    "confirm": "Confirmați",
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "success": "Succes",
+    "warning": "Avertisment",
+    "info": "Informație",
+    "yes": "Da",
+    "no": "Nu",
+    "ok": "OK",
+    "back": "Înapoi",
+    "next": "Înainte",
+    "search": "Căutare",
+    "filter": "Filtru",
+    "reset": "Resetare",
+    "apply": "Aplicați",
+    "more": "Mai mult",
+    "less": "Mai puțin",
+    "viewAll": "Vezi tot",
+    "newsletter": {
+      "title": "Abonează-te la newsletterul nostru",
+      "subtitle": "Primește cele mai recente articole și actualizări în inbox-ul tău",
+      "placeholder": "Introdu email-ul tău",
+      "subscribe": "Abonează-te"
+    }
+  }
+}

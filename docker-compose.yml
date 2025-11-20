@@ -1,0 +1,137 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-network
+
+  gateway:
+    build: ./services/gateway
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - JWT_SECRET=smart-parking-secret-key-2024
+      - AUTH_SERVICE_URL=http://auth-service:3002
+      - PARKING_SERVICE_URL=http://parking-service:3003
+      - BOOKING_SERVICE_URL=http://booking-service:3004
+      - PAYMENT_SERVICE_URL=http://payment-service:3005
+      - BLOG_SERVICE_URL=http://blog-service:3006
+      - SUPPORT_SERVICE_URL=http://support-service:3007
+    depends_on:
+      - mongodb
+      - auth-service
+      - parking-service
+      - booking-service
+      - payment-service
+      - blog-service
+      - support-service
+    networks:
+      - app-network
+
+  auth-service:
+    build: ./services/auth-service
+    environment:
+      - PORT=3002
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - JWT_SECRET=smart-parking-secret-key-2024
+      - JWT_EXPIRE=7d
+      - JWT_REFRESH_SECRET=smart-parking-refresh-secret-2024
+      - JWT_REFRESH_EXPIRE=30d
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  parking-service:
+    build: ./services/parking-service
+    ports:
+      - "3003:3003"
+    environment:
+      - PORT=3003
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - JWT_SECRET=smart-parking-secret-key-2024
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  booking-service:
+    build: ./services/booking-service
+    environment:
+      - PORT=3004
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - JWT_SECRET=smart-parking-secret-key-2024
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  payment-service:
+    build: ./services/payment-service
+    environment:
+      - PORT=3005
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - EXCHANGE_RATE_API_KEY=2d26100c323c1faf2d792cda
+      - JWT_SECRET=smart-parking-secret-key-2024
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  blog-service:
+    build: ./services/blog-service
+    environment:
+      - PORT=3006
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - JWT_SECRET=smart-parking-secret-key-2024
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  support-service:
+    build: ./services/support-service
+    environment:
+      - PORT=3007
+      - NODE_ENV=development
+      - MONGODB_URI=mongodb://mongodb:27017/smart-parking
+      - JWT_SECRET=smart-parking-secret-key-2024
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:3001/api
+      - VITE_SOCKET_URL=http://localhost:3003
+    depends_on:
+      - gateway
+    networks:
+      - app-network
+
+  
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:

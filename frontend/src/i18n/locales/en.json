@@ -1,0 +1,432 @@
+{
+  "parking": {
+    "title": "Find Parking",
+    "subtitle": "Discover available parking spots in real-time",
+    "loading": "Loading parking locations...",
+    "searchPlaceholder": "Search by location or name...",
+    "filters": "Filters",
+    "available": "Available",
+    "occupied": "Occupied",
+    "reserved": "Reserved",
+    "availableSpots": "Available",
+    "occupiedSpots": "Occupied", 
+    "reservedSpots": "Reserved",
+    "viewMap": "View Parking Map",
+    "clickToBook": "Click to book",
+    "parkingNames": {
+      "centralParkingA": "Central Parking A",
+      "shoppingCenterParkingB": "Shopping Center Parking B"
+    },
+    "spot": "Spot",
+    "spotNumber": "Spot {{number}}",
+    "selectSpot": "Please select a parking spot",
+    "selectDuration": "Select duration",
+    "hourly": "Hourly",
+    "daily": "Daily",
+    "monthly": "Monthly",
+    "perHour": "/hour",
+    "perDay": "/day",
+    "perMonth": "/month",
+    "bookNow": "Book Now",
+    "freeBooking": "Free Booking",
+    "totalPrice": "Total Price",
+    "selectVehicle": "Select Vehicle",
+    "selectTariff": "Select Tariff",
+    "bookingSuccess": "Booking Successful"
+  },
+  "tariff": {
+    "title": "Tariffs",
+    "description": "Choose the perfect plan for your needs",
+    "selectPlan": "Select Plan",
+    "perHour": "/hour",
+    "perDay": "/day",
+    "perWeek": "/week",
+    "perMonth": "/month",
+    "perHourly": "/hour",
+    "perDaily": "/day", 
+    "perWeekly": "/week",
+    "perMonthly": "/month",
+    "popular": "Popular",
+    "features": "Features",
+    "basic": "Basic",
+    "standard": "Standard", 
+    "premium": "Premium",
+    "vip": "VIP",
+    "plans": {
+      "hourly": {
+        "name": "Hourly",
+        "description": "Perfect for short stops",
+        "features": [
+          "Pay per use",
+          "No commitment", 
+          "24/7 access"
+        ]
+      },
+      "daily": {
+        "name": "Daily",
+        "description": "Best choice for day trips",
+        "features": [
+          "Unlimited entry/exit",
+          "24/7 access",
+          "Priority spots"
+        ]
+      },
+      "weekly": {
+        "name": "Weekly", 
+        "description": "Great for weekly commuters",
+        "features": [
+          "28% discount",
+          "Reserved spot",
+          "Unlimited access"
+        ]
+      },
+      "monthly": {
+        "name": "Monthly",
+        "description": "Best value for regular users", 
+        "features": [
+          "50% discount",
+          "Guaranteed spot",
+          "VIP support",
+          "Free car wash"
+        ]
+      }
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Cart is empty",
+    "emptyDescription": "Add tariffs or bookings to your cart",
+    "addedToCart": "{{name}} added to cart",
+    "removeFromCart": "Remove from cart",
+    "goToCheckout": "Proceed to Checkout",
+    "itemsCount": "{{count}} item",
+    "itemsCount_plural": "{{count}} items"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "emptyCart": "Cart is empty",
+    "emptyCartDescription": "Add tariffs to proceed with checkout",
+    "goToTariffs": "Go to Tariffs",
+    "orderSummary": "Order Details",
+    "summary": "Summary",
+    "quantity": "Quantity",
+    "paymentMethod": "Payment Method",
+    "card": "Credit Card",
+    "balance": "Balance",
+    "subtotal": "Subtotal",
+    "tax": "VAT",
+    "total": "Total",
+    "placeOrder": "Place Order",
+    "orderPlaced": "Order placed via {{method}}!",
+    "terms": "By clicking \"Place Order\", you agree to the terms of service",
+    "contactInfo": "Contact Information",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "steps": {
+      "cart": "Cart",
+      "parking": "Parking",
+      "slot": "Slot",
+      "payment": "Payment"
+    },
+    "reviewCart": "Review Cart",
+    "selectParking": "Select Parking",
+    "selectSlot": "Select Slot",
+    "selectedLocation": "Selected Location",
+    "selectedSlot": "Selected Slot",
+    "spot": "Spot"
+  },
+  "profile": {
+    "title": "Profile",
+    "myBookings": "My Bookings",
+    "activeBookings": "Active Bookings",
+    "bookingsHistory": "Booking History",
+    "totalSpent": "Total Spent",
+    "noBookings": "You don't have any bookings yet",
+    "noBookingsDescription": "Book a parking spot right now!",
+    "bookParking": "Book Parking",
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "pending": "Pending"
+    },
+    "bookingDetails": "Booking Details",
+    "parking": "Parking",
+    "spot": "Spot",
+    "duration": "Duration",
+    "price": "Price",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "qrCode": "QR Code",
+    "showQR": "Show QR Code",
+    "hideQR": "Hide QR Code",
+    "cancelBooking": "Cancel Booking",
+    "confirmCancel": "Are you sure you want to cancel this booking?"
+  },
+  "balance": {
+    "title": "Balance",
+    "currentBalance": "Current Balance",
+    "topUp": "Top Up",
+    "amount": "Amount",
+    "enterAmount": "Enter amount",
+    "minAmount": "Minimum top-up amount: 10 MDL",
+    "commission": "Commission",
+    "total": "Total to Pay",
+    "pay": "Pay",
+    "processing": "Processing...",
+    "success": "Balance topped up by {{amount}} successfully!",
+    "error": "Error topping up balance",
+    "history": "Transaction History",
+    "noTransactions": "No transactions",
+    "type": {
+      "topup": "Top Up",
+      "booking": "Booking",
+      "refund": "Refund"
+    }
+  },
+  "header": {
+    "home": "Home",
+    "parking": "Parking",
+    "tariffs": "Tariffs",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "adminPanel": "Admin Panel",
+    "logout": "Logout",
+    "cart": "Cart",
+    "balance": "Balance"
+  },
+  "footer": {
+    "description": "Smart parking system for convenience and safety",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "loginSuccess": "Login successful!",
+    "registerSuccess": "Registration successful!",
+    "loginError": "Invalid email or password",
+    "registerError": "Registration error"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Have questions? We're here to help!",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message",
+    "address": "Address",
+    "phone": "Phone",
+    "workingHours": "Working Hours"
+  },
+  "support": {
+    "chat": "Support Chat",
+    "online": "Online",
+    "offline": "Offline",
+    "typeMessage": "Type a message...",
+    "send": "Send",
+    "close": "Close",
+    "minimize": "Minimize"
+  },
+  "currency": {
+    "select": "Select Currency",
+    "MDL": "Moldovan Leu",
+    "USD": "US Dollar",
+    "EUR": "Euro"
+  },
+  "home": {
+    "hero": {
+      "title": "Smart Parking Made Simple",
+      "subtitle": "Find, book, and pay for parking in seconds. Real-time availability, multiple locations, hassle-free experience.",
+      "findParking": "Find Parking Now",
+      "createAccount": "Create Free Account"
+    },
+    "stats": {
+      "activeUsers": "Active Users",
+      "parkingLocations": "Parking Locations", 
+      "uptime": "Uptime",
+      "support": "Support"
+    },
+    "features": {
+      "title": "Why Choose Smart Parking?",
+      "subtitle": "Experience the future of parking with our innovative features designed to make your life easier.",
+      "realTimeAvailability": {
+        "title": "Real-time Availability",
+        "description": "See available parking spots in real-time with live updates"
+      },
+      "mobileFriendly": {
+        "title": "Mobile Friendly", 
+        "description": "Book and manage parking from your smartphone"
+      },
+      "securePayment": {
+        "title": "Secure Payment",
+        "description": "Safe and secure online payment options"
+      },
+      "multipleLocations": {
+        "title": "Multiple Locations",
+        "description": "Find parking across multiple locations in your city"
+      },
+      "dynamicPricing": {
+        "title": "Dynamic Pricing",
+        "description": "Fair pricing based on demand and time"
+      },
+      "easyAccess": {
+        "title": "Easy Access",
+        "description": "Quick entry and exit with automated barriers"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Get started in just three simple steps",
+      "step1": {
+        "title": "Find a Spot",
+        "description": "Search for available parking spots near your destination"
+      },
+      "step2": {
+        "title": "Book & Pay",
+        "description": "Reserve your spot and pay securely online"
+      },
+      "step3": {
+        "title": "Park with Ease",
+        "description": "Use your booking confirmation to access the parking area"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Parking Smarter?",
+      "subtitle": "Join thousands of satisfied customers who trust Smart Parking for their daily parking needs.",
+      "getStarted": "Get Started Today"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "We provide modern parking management solutions using IoT technologies",
+    "mission": {
+      "title": "Our Mission",
+      "description1": "We strive to make parking simple, convenient and efficient for all road users.",
+      "description2": "Using modern IoT technologies and smart sensors, we help optimize the use of parking spaces and save drivers' time."
+    },
+    "stats": {
+      "customers": "Satisfied Customers",
+      "parkings": "Parkings in System",
+      "experience": "Years Experience",
+      "satisfaction": "Satisfaction Rate"
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly implement cutting-edge technologies to improve user experience"
+      },
+      "reliability": {
+        "title": "Reliability", 
+        "description": "Our systems work 24/7 providing stable and secure service"
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "We make parking accessible to everyone, regardless of technical skills"
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "A professional team of developers and engineers working to improve urban mobility"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Have questions? We're here to help!",
+      "getInTouch": "Get in Touch"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest news and insights about smart parking",
+    "readMore": "Read More",
+    "author": "Author",
+    "publishedOn": "Published on",
+    "category": "Category",
+    "noArticles": "No articles found",
+    "loadMore": "Load More Articles",
+    "searchPlaceholder": "Search articles...",
+    "categories": {
+      "all": "All Categories",
+      "technology": "Technology",
+      "tips": "Tips & Tricks", 
+      "environment": "Environment",
+      "business": "Business",
+      "news": "News"
+    },
+    "posts": {
+      "smartParking": {
+        "title": "The Future of Smart Parking: AI and IoT Integration",
+        "excerpt": "Discover how artificial intelligence and Internet of Things are revolutionizing urban parking solutions."
+      },
+      "parkingTips": {
+        "title": "5 Tips for Finding Parking in Busy Cities",
+        "excerpt": "Learn expert strategies to save time and reduce stress when looking for parking spots in metropolitan areas."
+      },
+      "sustainability": {
+        "title": "Sustainability in Urban Parking Management", 
+        "excerpt": "How smart parking systems contribute to reducing carbon emissions and creating greener cities."
+      },
+      "dynamicPricing": {
+        "title": "Understanding Dynamic Pricing in Parking",
+        "excerpt": "A comprehensive guide to how dynamic pricing works and its benefits for both users and parking operators."
+      },
+      "security": {
+        "title": "Security Features in Modern Parking Systems",
+        "excerpt": "Explore the advanced security measures that protect both vehicles and user data in smart parking solutions."
+      }
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "filter": "Filter",
+    "reset": "Reset",
+    "apply": "Apply",
+    "more": "More",
+    "less": "Less",
+    "viewAll": "View All",
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "subtitle": "Get the latest articles and updates delivered to your inbox",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    }
+  }
+}
