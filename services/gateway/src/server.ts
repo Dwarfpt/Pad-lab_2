@@ -28,7 +28,7 @@ const proxyRequest = async (serviceUrl: string, req: express.Request, res: expre
   try {
     const url = `${serviceUrl}${req.originalUrl}`;
     console.log(`Proxying to: ${url}`);
-    
+
     const response = await axios({
       method: req.method,
       url: url,
@@ -75,6 +75,10 @@ app.get('/health', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-httpServer.listen(PORT, () => {
-  console.log(`🚀 Gateway running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  httpServer.listen(PORT, () => {
+    console.log(`🚀 Gateway running on port ${PORT}`);
+  });
+}
+
+export { app };

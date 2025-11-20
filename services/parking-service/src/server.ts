@@ -129,11 +129,13 @@ process.on('uncaughtException', (error) => {
 
 const PORT = process.env.PORT || 3001;
 
-httpServer.listen(PORT, () => {
-  console.log(`🚀 Сервер запущен на порту ${PORT}`);
-  console.log(`📊 Окружение: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🌐 API: http://localhost:${PORT}/api`);
-  console.log(`❤️  Health check: http://localhost:${PORT}/health`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  httpServer.listen(PORT, () => {
+    console.log(`🚀 Сервер запущен на порту ${PORT}`);
+    console.log(`📊 Окружение: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`🌐 API: http://localhost:${PORT}/api`);
+    console.log(`❤️  Health check: http://localhost:${PORT}/health`);
+  });
+}
 
-export { io };
+export { app, io };
