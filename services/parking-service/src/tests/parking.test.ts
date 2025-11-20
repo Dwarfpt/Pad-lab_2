@@ -29,7 +29,7 @@ describe('Parking Controller', () => {
         jest.clearAllMocks();
     });
 
-    describe('GET /api/parking', () => {
+    describe('GET /api/parkings', () => {
         it('should return all active parkings', async () => {
             const mockParkings = [
                 { name: 'Parking 1', isActive: true },
@@ -38,7 +38,7 @@ describe('Parking Controller', () => {
 
             (Parking.find as jest.Mock).mockResolvedValue(mockParkings);
 
-            const res = await request(app).get('/api/parking');
+            const res = await request(app).get('/api/parkings');
 
             expect(res.status).toBe(200);
             expect(res.body.success).toBe(true);
@@ -47,7 +47,7 @@ describe('Parking Controller', () => {
         });
     });
 
-    describe('POST /api/parking', () => {
+    describe('POST /api/parkings', () => {
         it('should create a new parking and slots', async () => {
             const parkingData = {
                 name: 'New Parking',
@@ -65,7 +65,7 @@ describe('Parking Controller', () => {
             (ParkingSlot.insertMany as jest.Mock).mockResolvedValue([]);
 
             const res = await request(app)
-                .post('/api/parking')
+                .post('/api/parkings')
                 .send(parkingData);
 
             expect(res.status).toBe(201);
