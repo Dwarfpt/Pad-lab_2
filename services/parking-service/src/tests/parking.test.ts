@@ -52,6 +52,11 @@ describe('Parking Controller', () => {
             const parkingData = {
                 name: 'New Parking',
                 address: '123 Street',
+                city: 'Test City',
+                coordinates: {
+                    lat: 47.0105,
+                    lng: 28.8638
+                },
                 totalSlots: 5,
                 pricePerHour: 10
             };
@@ -64,12 +69,12 @@ describe('Parking Controller', () => {
 
             (ParkingSlot.insertMany as jest.Mock).mockResolvedValue([]);
 
-            const res = await request(app)
+            const response = await request(app)
                 .post('/api/parkings')
                 .send(parkingData);
 
-            expect(res.status).toBe(201);
-            expect(res.body.success).toBe(true);
+            expect(response.status).toBe(201);
+            expect(response.body.success).toBe(true);
             expect(Parking.create).toHaveBeenCalled();
             expect(ParkingSlot.insertMany).toHaveBeenCalled();
             // Проверяем, что insertMany был вызван с правильным количеством слотов (5)
